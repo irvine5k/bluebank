@@ -8,6 +8,7 @@ class AccountsController < ApplicationController
     # POST /accounts
     def create
         return head :unprocessable_entity unless Account.open(account_params)
+        render status: :created
     end
 
     # POST /accounts/1/deposit
