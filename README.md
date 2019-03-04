@@ -3,15 +3,21 @@
 ## Installation
 ```bash
 git clone https://github.com/irvine5k/bluebank
+
 cd bluebank/bluebank-back
+
 bundle
+
 rails s
-cd bluebank/bluebank-front
+
+cd bluebank/bluebank-back/bluebank-front
+
 npm init
+
 npm start
 ```
 
-## API
+## API /bluebank-back
 
 ### CREATE A CLIENT
 ```bash
