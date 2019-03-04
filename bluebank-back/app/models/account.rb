@@ -1,10 +1,10 @@
 class Account < ApplicationRecord
   belongs_to :client
 
-  validates_presence_of :cpf, :number, :agency
+  validates_presence_of :number, :agency, :client_id
 
   def self.open(params)
-    account = current_user.accounts.build(params)
+    account = new(params)
     puts "CREATE ACCOUNT: #{account.attributes}"
     account.save!
   end
@@ -41,4 +41,3 @@ class Account < ApplicationRecord
     return true
   end
 end
-

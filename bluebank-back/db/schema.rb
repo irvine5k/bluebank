@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2019_03_04_170952) do
   enable_extension "plpgsql"
 
   create_table "accounts", force: :cascade do |t|
-    t.string "cpf"
     t.string "number"
     t.string "agency"
     t.float "balance", default: 0.0
@@ -27,8 +26,7 @@ ActiveRecord::Schema.define(version: 2019_03_04_170952) do
   end
 
   create_table "clients", force: :cascade do |t|
-    t.string "email", null: false
-    t.string "password_digest", null: false
+    t.string "cpf", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

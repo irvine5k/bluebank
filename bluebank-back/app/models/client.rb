@@ -1,3 +1,3 @@
 class Client < ApplicationRecord
-    has_secured_password
+    validates :cpf, presence: true, uniqueness: true
 end
