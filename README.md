@@ -17,6 +17,13 @@ npm init
 npm start
 ```
 
+## Unit Tests
+
+```bash
+    cd bluebank/bluebank-back
+    bundle exec rspec
+```
+
 ## API /bluebank-back
 
 ### CREATE A CLIENT
