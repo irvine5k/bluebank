@@ -1,6 +1,6 @@
 import Axios from 'axios'
 
-const API_URL = 'http://localhost:3000'
+const API_URL = 'https://apibluebank.herokuapp.com'
 
 const securedAxiosInstance = Axios.create({
     baseURL: API_URL,
