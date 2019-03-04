@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: bb_db_dev
+  pool: 5
+  username: postgres
+  password: 123456
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: bb_db_test
+  pool: 5
+  username: postgres
+  password: 123456
